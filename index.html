@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUS- NAVIGATION App</title>
+    <link rel="stylesheet" href="resources/ol/ol.css">
+    <link rel="stylesheet" href="resources/layerswitcher/ol-layerswitcher.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ThIS IS THE MAP CONTAINER -->
+    <div id="map"></div>
+    
+
+    <!-- ThIS IS THE CONTAINER FOR SEARCH/QUERY TOOL -->
+    <div class="attQueryDiv" id="attQueryDiv">
+        <div class="headerDiv" id="headerDiv">
+            <label for="">SEARCH HERE</label>
+        </div><br>
+        <label for="">NAME</label>
+        <select name="selectLayer" id="selectLayer">
+        </select><br><br>
+
+        <label for="">Select Attribute</label>
+        <select name="selectAttribute" id="selectAttribute">
+        </select><br><br>
+        
+
+        <button type="button" id="attQryRun" class="attQryRun" onclick="attributeQuery()">Run</button>
+      </div>
+
+       <div class="attListDiv" id="attListDiv">
+    </div>
+    
+    <script> </script>
+    <script src="resources/ol/ol.js"></script>
+    <script src="resources/layerswitcher/ol-layerswitcher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="resources/node_modules/ol/Geolocation.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
